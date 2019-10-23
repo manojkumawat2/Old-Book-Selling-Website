@@ -1,0 +1,193 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+
+header{
+	background-color: black;
+	width: 100%;
+	height: 50px;
+
+}
+#logo{
+	height: 50px;
+	margin-top: 3px;
+	margin-left: 5px;
+	float: left;
+}
+
+nav ul{
+	text-decoration: none;
+	float: right;
+	padding: 0px;
+}
+ul li{
+	display: inline-block;
+	padding-right: 30px;
+}
+ul li a{
+	text-decoration: none;
+	text-decoration-style: none;
+	color: white;
+	font-size: 18px;
+}
+ul li a:hover{
+	transition: 0.7s all;
+	color: yellow;
+	border-bottom: 1px solid yellow;
+}
+
+.menu-toggle{
+	color: white;
+	float: right;
+	font-size: 24px;
+	cursor: pointer;
+	padding: 10px;
+	display: none;
+}
+
+@media only screen and (max-width: 682px){
+   .menu-toggle{
+   	display: block;
+   }
+ header nav{
+  	position: absolute;
+ 	height: 100%
+ 	background-color: black;
+ 	top: 50px;
+ 	width: 100%;
+ 	float: left;
+ 	display: block;
+ 	background-color: black;
+ 	left: 0;
+ 	transition: 0.5s;
+ }
+ nav ul{
+ 	display: none;
+ 	text-align: center;
+ 	float: none;
+ 	transition: 0.5s;
+ }
+ nav ul li{
+ 	display: block;
+ 	padding: 10px;
+ 	
+ }
+ nav ul li a{
+ 	display: block;
+ 	border-bottom: 1px solid white;
+ }
+ header nav ul.active{
+ 	left: 0px;
+ 	display: block;
+ } 
+}
+
+
+/*footer css is here*/
+footer{
+	bottom: 0;
+	left: 0;
+	background-color: black;
+	width: 100%;
+	color: white;
+	text-align: center;
+	padding: 1vh;
+}
+
+.h1{
+	margin-top: 10px;
+}
+
+#register{
+	text-align: center;
+}
+
+form{
+	text-align: center;
+}
+
+.input{
+	border: 1px solid #D3CECE;
+	border-radius: 10px;
+	width: 25%;
+	height: 5vh;
+}
+.submit{
+	border-radius: 10px;
+	height: 30px;
+	background-color: orange;
+	cursor: pointer;
+	width: 15%;
+	height: 5vh;
+}
+.input:focus{
+	border: 1px solid black;
+}
+
+select{
+	border: 1px solid #D3CECE;
+	border-radius: 10px;
+	width: 25%;
+	height: 5vh;
+
+}
+
+@media screen and (max-width: 574px){
+	.h1{
+		width: 100%;
+		height: 70vh;
+	}
+}
+
+#welcome{
+	text-align: center; 
+	background-color: #ffb3b3;
+	margin-top: 4px;
+}
+
+.already{
+	font-size: 2vh;
+	padding: 2vh;
+}
+
+@media (max-width: 709px){
+	.input{
+		width: 40%;
+	}
+	.submit{
+		width: 30%;
+	}
+	select{
+		width: 40%;
+	}
+}
+@media (max-width: 591px){
+	.input{
+		width: 60%;
+	}
+	.submit{
+
+	}
+	select{
+		width: 60%;
+	}
+}
+@media (max-width: 450px){
+	.input{
+		width: 80%;
+	}
+	.submit{
+
+	}
+	select{
+		width: 80%;
+	}
+}
